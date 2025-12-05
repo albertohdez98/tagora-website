@@ -1,5 +1,192 @@
-<h1>Routy – Legal</h1>
-<ul>
-  <li><a href="/projects/routy/privacy-policy">Privacy Policy</a></li>
-  <li><a href="/projects/routy/terms-of-use">Terms of Use</a></li>
-</ul>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Routy – Legal Information | Tagora.tech</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root {
+      --primary: #6366f1;
+      --bg: #020617;
+      --bg-card: #0b1120;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --border: #1e293b;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #111827, #020617);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 24px;
+    }
+
+    .wrapper {
+      max-width: 900px;
+      width: 100%;
+      background: rgba(15, 23, 42, 0.94);
+      border-radius: 18px;
+      padding: 26px 20px;
+      border: 1px solid var(--border);
+      box-shadow: 0 18px 45px rgba(15, 23, 42, 0.9);
+    }
+
+    header {
+      margin-bottom: 18px;
+    }
+
+    .breadcrumbs {
+      font-size: 11px;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+
+    .breadcrumbs a {
+      color: var(--muted);
+      text-decoration: none;
+    }
+
+    .breadcrumbs a:hover {
+      text-decoration: underline;
+    }
+
+    h1 {
+      font-size: 22px;
+      margin-bottom: 4px;
+    }
+
+    .subtitle {
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .cards {
+      display: grid;
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .card {
+      background: var(--bg-card);
+      border-radius: 14px;
+      padding: 16px 18px;
+      border: 1px solid var(--border);
+    }
+
+    .card-title {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .card-text {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-size: 11px;
+      border: 1px solid rgba(148, 163, 184, 0.5);
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+
+    a.button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 7px 13px;
+      border-radius: 999px;
+      border: 1px solid rgba(99, 102, 241, 0.5);
+      background: radial-gradient(circle at top left, rgba(129, 140, 248, 0.16), rgba(15, 23, 42, 0.98));
+      color: var(--text);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    a.button span {
+      margin-left: 6px;
+      font-size: 14px;
+    }
+
+    footer {
+      margin-top: 18px;
+      font-size: 11px;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 600px) {
+      .wrapper {
+        padding: 20px 16px;
+      }
+      h1 {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="breadcrumbs">
+        <a href="/">Tagora.tech</a> · <span>Projects</span> · <span>Routy</span>
+      </div>
+      <h1>Routy – Legal information</h1>
+      <p class="subtitle">
+        This page hosts the official legal documentation for Routy, including the Privacy Policy and the Terms of Use.
+      </p>
+    </header>
+
+    <main>
+      <div class="cards">
+        <div class="card">
+          <div class="tag">Document</div>
+          <div class="card-title">Privacy Policy</div>
+          <p class="card-text">
+            How Routy collects, uses, stores and protects your personal data, including location data used to generate routes.
+          </p>
+          <a class="button" href="/projects/routy/privacy-policy">
+            Read Privacy Policy <span>↗</span>
+          </a>
+        </div>
+
+        <div class="card">
+          <div class="tag">Document</div>
+          <div class="card-title">Terms of Use</div>
+          <p class="card-text">
+            The rules and conditions for using Routy, including limitations of liability and acceptable use.
+          </p>
+          <a class="button" href="/projects/routy/terms-of-use">
+            Read Terms of Use <span>↗</span>
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <span>© <span id="year"></span> Tagora.tech · Routy</span>
+      <span>This content is provided for information only and is not legal advice.</span>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
