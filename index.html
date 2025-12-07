@@ -1,189 +1,214 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Tagora.tech – Indie Projects</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    :root {
-      --primary: #6366f1;
-      --bg: #020617;
-      --bg-card: #0b1120;
-      --text: #e5e7eb;
-      --muted: #9ca3af;
-      --border: #1e293b;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: radial-gradient(circle at top left, #111827, #020617);
-      color: var(--text);
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 24px;
-    }
-
-    .wrapper {
-      max-width: 800px;
-      width: 100%;
-      background: rgba(15, 23, 42, 0.9);
-      border-radius: 18px;
-      padding: 28px 24px;
-      border: 1px solid var(--border);
-      box-shadow: 0 18px 45px rgba(15, 23, 42, 0.9);
-    }
-
-    header {
-      margin-bottom: 24px;
-    }
-
-    .logo {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      margin-bottom: 8px;
-    }
-
-    .logo-mark {
-      width: 26px;
-      height: 26px;
-      border-radius: 10px;
-      background: radial-gradient(circle at 30% 20%, #a5b4fc, #6366f1);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 700;
-      font-size: 14px;
-      color: white;
-    }
-
-    h1 {
-      font-size: 24px;
-      margin-bottom: 6px;
-    }
-
-    .subtitle {
-      color: var(--muted);
-      font-size: 14px;
-      max-width: 480px;
-    }
-
-    .section-title {
-      font-size: 16px;
-      margin-bottom: 8px;
-      margin-top: 8px;
-    }
-
-    .projects-list {
-      margin-top: 20px;
-      display: grid;
-      gap: 12px;
-    }
-
-    .card {
-      background: var(--bg-card);
-      border-radius: 14px;
-      padding: 16px 18px;
-      border: 1px solid var(--border);
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-    }
-
-    .card-title {
-      font-size: 15px;
-      font-weight: 600;
-    }
-
-    .card-text {
-      font-size: 13px;
-      color: var(--muted);
-    }
-
-    a.button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 8px 14px;
-      border-radius: 999px;
-      border: 1px solid rgba(99, 102, 241, 0.4);
-      background: radial-gradient(circle at top left, rgba(129, 140, 248, 0.15), rgba(15, 23, 42, 0.9));
-      color: var(--text);
-      text-decoration: none;
-      font-size: 13px;
-      font-weight: 500;
-      margin-top: 6px;
-    }
-
-    a.button span {
-      margin-left: 6px;
-      font-size: 14px;
-    }
-
-    footer {
-      margin-top: 18px;
-      font-size: 11px;
-      color: var(--muted);
-      display: flex;
-      justify-content: space-between;
-      gap: 8px;
-      flex-wrap: wrap;
-    }
-
-    @media (max-width: 600px) {
-      .wrapper {
-        padding: 20px 16px;
-      }
-      h1 {
-        font-size: 20px;
-      }
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <title>Tagora.tech – Indie tools & experiments</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Tagora.tech hosts small, experimental products and utilities—indie tools built for curiosity, learning, and real-world problems."
+  />
+  <link rel="stylesheet" href="styles.css" />
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  />
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
 </head>
 <body>
-  <div class="wrapper">
-    <header>
-      <div class="logo">
+  <div class="page">
+    <!-- Top navigation -->
+    <header class="nav">
+      <div class="nav-left">
         <div class="logo-mark">T</div>
-        <span>Tagora.tech</span>
-      </div>
-      <h1>Indie tools & experiments</h1>
-      <p class="subtitle">
-        Tagora.tech hosts small, experimental products and utilities. Some of them – like routit – need a simple, stable place for their legal documentation.
-      </p>
-    </header>
-
-    <main>
-      <h2 class="section-title">Projects</h2>
-      <div class="projects-list">
-        <div class="card">
-          <div class="card-title">routit</div>
-          <p class="card-text">
-            A route generation app for runners and walkers. This page hosts its legal documentation (Privacy Policy, Terms of Use, etc.).
-          </p>
-          <a class="button" href="/projects/routit/">
-            Open routit legal hub <span>↗</span>
-          </a>
+        <div class="logo-text">
+          <span class="logo-main">Tagora.tech</span>
+          <span class="logo-sub">Indie tools & experiments</span>
         </div>
       </div>
+      <nav class="nav-links">
+        <a href="#projects">Projects</a>
+        <a href="#knowledge">Knowledge (soon)</a>
+        <a href="#about">About</a>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <main class="hero">
+      <section class="hero-text">
+        <h1>
+          Indie tools for
+          <span class="accent-gradient">curious people</span>.
+        </h1>
+        <p class="hero-subtitle">
+          Tagora.tech is a small lab of experimental apps and utilities –
+          built after hours, tested in the real world, and iterated in public.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn primary">Explore projects</a>
+          <a href="#about" class="btn ghost">What is Tagora?</a>
+        </div>
+        <div class="hero-meta">
+          <span>🔧 Solo-built indie experiments</span>
+          <span>📍 Dublin / EU</span>
+        </div>
+      </section>
+
+      <section class="hero-card">
+        <div class="hero-card-inner">
+          <h2>Currently shipping</h2>
+          <p>
+            <strong>routit</strong> – a route generation app for runners and walkers.
+            This site hosts its legal documentation and will later
+            showcase other Tagora experiments.
+          </p>
+          <a
+            href="#projects"
+            class="chip-link"
+          >
+            View projects ↓
+          </a>
+        </div>
+      </section>
     </main>
 
-    <footer>
-      <span>© <span id="year"></span> Tagora.tech</span>
-      <span>Indie projects · Dublin / EU</span>
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="section-header">
+        <h2>Projects</h2>
+        <p>Small, focused tools that try to solve real, specific problems.</p>
+      </div>
+
+      <div class="cards">
+        <!-- Routit / Routy project card -->
+        <article class="card">
+          <div class="card-tag">Live</div>
+          <h3>routit</h3>
+          <p class="card-desc">
+            A route generation app for runners and walkers. Create distance-based
+            loops from a starting point, avoiding the usual boring out-and-back routes.
+          </p>
+          <ul class="card-list">
+            <li>🏃 Optimised for running & walking</li>
+            <li>📍 Currently focused on Ireland (beta)</li>
+            <li>⚖️ Legal hub hosted on Tagora.tech</li>
+          </ul>
+          <div class="card-actions">
+            <!-- Cambia este enlace cuando tengas la URL final del hub -->
+            <a
+              href="#"
+              class="btn small primary"
+            >
+              Open routit legal hub
+            </a>
+            <span class="card-note">App details coming soon</span>
+          </div>
+        </article>
+
+        <!-- Future experiments -->
+        <article class="card">
+          <div class="card-tag secondary">In exploration</div>
+          <h3>Plastik (working title)</h3>
+          <p class="card-desc">
+            A concept for short, focused mini-games designed to train attention,
+            precision and cognitive control – a counterweight to infinite scrolling.
+          </p>
+          <ul class="card-list">
+            <li>🎯 Micro-sessions, low friction</li>
+            <li>🧠 Focused on cognitive skills</li>
+            <li>📱 Mobile-first experiments</li>
+          </ul>
+          <div class="card-actions">
+            <span class="card-note">Not public yet – still on the whiteboard.</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-tag secondary">Roadmap</div>
+          <h3>Digital infrastructure knowledge hub</h3>
+          <p class="card-desc">
+            A curated space for submarine cables, data centres and digital
+            infrastructure strategy – notes, links and tools built from real-world work.
+          </p>
+          <ul class="card-list">
+            <li>🌍 Subsea cables & data centres</li>
+            <li>📚 Curated articles & tools</li>
+            <li>🔒 Private at first, public later</li>
+          </ul>
+          <div class="card-actions">
+            <span class="card-note">Coming later under the Tagora umbrella.</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Knowledge stub -->
+    <section id="knowledge" class="section section-muted">
+      <div class="section-header">
+        <h2>Knowledge & writing (soon)</h2>
+        <p>
+          Tagora.tech will also host opinionated notes on digital infrastructure,
+          resilience, and the messy overlap between strategy and technology.
+        </p>
+      </div>
+      <div class="pill-row">
+        <span class="pill">Submarine cables</span>
+        <span class="pill">Data centres</span>
+        <span class="pill">Resilience & risk</span>
+        <span class="pill">Maps & visualisation</span>
+        <span class="pill">Indie tooling</span>
+      </div>
+      <p class="section-note">
+        For now, this space is empty on purpose. First ship tools, then tell the story.
+      </p>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="section-header">
+        <h2>About Tagora</h2>
+        <p>
+          Tagora.tech is a personal lab for side projects – a place to prototype,
+          break things safely, and ship small tools without asking for permission.
+        </p>
+      </div>
+      <div class="about-grid">
+        <div>
+          <h3>Principles</h3>
+          <ul class="about-list">
+            <li><strong>Small, focused scopes.</strong> Each tool should solve one clear problem.</li>
+            <li><strong>Real-world grounding.</strong> Inspired by day-to-day work and life.</li>
+            <li><strong>Sustainable pace.</strong> Built solo, iterated in spare time.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <p>
+            Want to say hi, share feedback, or collaborate on something related to
+            routes or digital infrastructure?
+          </p>
+          <p class="contact-email">
+            Update this to your real email →<br />
+            <a href="mailto:contact@tagora.tech">contact@tagora.tech</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <span>© Tagora.tech · Indie projects · Dublin / EU</span>
+      <span class="footer-separator">·</span>
+      <span>Built with GitHub Pages</span>
     </footer>
   </div>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
