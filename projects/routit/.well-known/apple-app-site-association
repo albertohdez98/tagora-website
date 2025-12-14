@@ -1,0 +1,13 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "2S9QTZJDCP.tech.tagora.routit",
+        "paths": [
+          "/projects/routit/route/*"
+        ]
+      }
+    ]
+  }
+}
