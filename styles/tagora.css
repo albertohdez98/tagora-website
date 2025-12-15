@@ -1,22 +1,26 @@
-:root{
-  --bg: #ffffff;
-  --panel: #ffffff;
-  --text: #0a0a0a;
-  --muted: #475569;
-  --primary: #0F2F2A;
-  --accent: #2F7F6F;
-  --border: rgba(15, 23, 42, 0.10);
-}
-
 body {
-  background: 
-    radial-gradient(1200px 600px at 15% 5%, rgba(47, 127, 111, 0.12), transparent 60%),
-    radial-gradient(900px 500px at 85% 0%, rgba(15, 47, 42, 0.10), transparent 55%),
-    #ffffff; /* Fondo principal blanco */
+  background:
+    radial-gradient(1200px 600px at 15% 0%, rgba(47,127,111,0.18), transparent 60%),
+    radial-gradient(900px 500px at 85% 10%, rgba(15,47,42,0.14), transparent 60%),
+    #ffffff;
+  color: #0a0a0a;
 }
 
-.hero {
-  background: #0F2F2A; /* Fondo verde azulado para resaltar */
-  padding: 6rem 1.5rem;
-  color: white;
+.badge {
+  background: rgba(47,127,111,0.15);
+  color: #0f2f2a;
+  border: 1px solid rgba(47,127,111,0.25);
+}
+
+.hero p {
+  color: #334155;
+}
+
+.card {
+  background: white;
+  border: 1px solid rgba(0,0,0,0.06);
+}
+
+.btn.primary {
+  background: #0f2f2a;
 }
