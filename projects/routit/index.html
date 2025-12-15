@@ -1,263 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>routit – Smart running & walking routes</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta
-    name="description"
-    content="routit is a smart route generator for runners and walkers. Create distance-based loops from your starting point – currently in beta for Ireland."
-  />
-  <link rel="stylesheet" href="/styles.css" />
+  <meta charset="UTF-8">
+  <title>Routit</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/base.css">
+  <link rel="stylesheet" href="/styles/routit.css">
 </head>
-
 <body>
-  <div class="page">
-    <!-- Top navigation -->
-    <header class="nav">
-      <div class="nav-left">
-        <div class="logo-mark">r</div>
-        <div class="logo-text">
-          <span class="logo-main">routit</span>
-          <span class="logo-sub">Smart running & walking routes</span>
-        </div>
-      </div>
-      <nav class="nav-links">
-        <a href="#features">Features</a>
-        <a href="#how-it-works">How it works</a>
-        <a href="#faq">FAQ</a>
-        <a href="/">Tagora.tech</a>
-      </nav>
-    </header>
 
-    <!-- Hero -->
-    <main class="hero">
-      <section class="hero-text">
-        <h1>
-          Smarter loops for
-          <span class="accent-gradient">every run</span>.
-        </h1>
-        <p class="hero-subtitle">
-          routit builds distance-based loops from your starting point, so you can
-          run or walk without repeating the same boring out-and-back routes.
-          Built as a focused, indie tool – currently in beta for Ireland.
-        </p>
-        <div class="hero-actions">
-          <!-- Botones de plataforma: ajusta cuando tengas links reales -->
-          <a class="btn primary" href="javascript:void(0)">
-            iOS beta – coming soon
-          </a>
-          <!-- <a class="btn ghost" href="YOUR_TESTFLIGHT_LINK_HERE">Join TestFlight</a> -->
-        </div>
-        <div class="hero-meta">
-          <span>🧪 Beta · Ireland only (for now)</span>
-          <span>🔐 Optional login, local route storage</span>
-        </div>
-      </section>
+<header>
+  <div class="logo">Routit</div>
+  <nav>
+    <a href="/">Tagora</a>
+    <a href="/projects/routit/privacy-policy/">Privacy</a>
+    <a href="/projects/routit/terms-of-use/">Terms</a>
+  </nav>
+</header>
 
-      <section class="hero-card">
-        <div class="hero-card-inner">
-          <h2>What routit does</h2>
-          <p>
-            Give routit a starting point and a target distance, and it will suggest
-            a loop that brings you back to where you started – ideal for city runs
-            and everyday walks.
-          </p>
-          <ul class="card-list">
-            <li>🏃 Designed for runners & walkers</li>
-            <li>📍 Uses your device’s location locally</li>
-            <li>🔑 Login optional – no account required</li>
-          </ul>
-          <a href="#features" class="chip-link">See all features ↓</a>
-        </div>
-      </section>
-    </main>
+<section class="hero">
+  <h1>Smart routes around you</h1>
+  <p>
+    Generate walking, running and cycling routes by distance,
+    right where you are.
+  </p>
+  <a class="cta" href="#">Download on the App Store</a>
+</section>
 
-    <!-- Features -->
-    <section id="features" class="section">
-      <div class="section-header">
-        <h2>Features</h2>
-        <p>Focused on one thing: better everyday routes with as little friction as possible.</p>
-      </div>
-
-      <div class="cards">
-        <article class="card">
-          <div class="card-tag">Core</div>
-          <h3>Distance-based loops</h3>
-          <p class="card-desc">
-            Choose your starting point and how far you want to go. routit builds
-            a loop that roughly matches your target distance, bringing you back
-            where you started.
-          </p>
-        </article>
-
-        <article class="card">
-          <div class="card-tag">Experience</div>
-          <h3>Clean, map-first interface</h3>
-          <p class="card-desc">
-            The map is the main character. The UI stays out of the way so you can
-            focus on the route, not on menus and clutter.
-          </p>
-        </article>
-
-        <article class="card">
-          <div class="card-tag">Privacy</div>
-          <h3>Local-first design</h3>
-          <p class="card-desc">
-            Routes are stored locally on your device in this beta version.
-            Optional login only stores a basic identifier (email + UID) – not your
-            routes or location history.
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <!-- How it works -->
-    <section id="how-it-works" class="section section-muted">
-      <div class="section-header">
-        <h2>How it works</h2>
-        <p>Quick to use before you head out the door.</p>
-      </div>
-
-      <div class="cards">
-        <article class="card">
-          <h3>1. Pick your starting point</h3>
-          <p class="card-desc">
-            Use your current location or move the map to where you want to begin.
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>2. Set your target distance</h3>
-          <p class="card-desc">
-            Choose how far you want to go – a short walk, an easy run, or a long session.
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>3. Get a loop and go</h3>
-          <p class="card-desc">
-            routit suggests a loop route that brings you back to the start.
-            Adjust and regenerate until you’re happy, then head out.
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <!-- Beta / geography -->
-    <section class="section">
-      <div class="section-header">
-        <h2>Built for Ireland (for now)</h2>
-        <p>
-          routit is currently in beta and optimised for use in Ireland.
-          Coverage and features will expand over time to other locations.
-        </p>
-      </div>
-    </section>
-
-    <!-- Legal & Support -->
-    <section class="section">
-      <div class="section-header">
-        <h2>Legal & support</h2>
-        <p>
-          Because routit is a real app, not just a prototype, it comes with
-          proper privacy, terms, and a way to support its development.
-        </p>
-      </div>
-
-      <div class="cards">
-        <article class="card">
-          <div class="card-tag">Privacy</div>
-          <h3>Privacy Policy</h3>
-          <p class="card-desc">
-            Details on how the app handles optional login, local storage, and your rights as a user.
-          </p>
-          <div class="card-actions">
-            <a href="/projects/routit/privacy-policy.html" class="btn small primary">
-              Read Privacy Policy
-            </a>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="card-tag">Terms</div>
-          <h3>Terms of Use</h3>
-          <p class="card-desc">
-            The rules and limitations that apply when using routit.
-          </p>
-          <div class="card-actions">
-            <a href="/projects/routit/terms-of-use.html" class="btn small primary">
-              Read Terms of Use
-            </a>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="card-tag">Support</div>
-          <h3>Support routit</h3>
-          <p class="card-desc">
-            routit is built and maintained as an indie side project.  
-            If you’d like to support it, you can do so via Stripe.
-          </p>
-          <div class="card-actions">
-            <a
-              href="https://buy.stripe.com/4gM7sN0CH0Op3BQ7xN9Zm00"
-              class="btn small primary"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Support via Stripe
-            </a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section id="faq" class="section">
-      <div class="section-header">
-        <h2>FAQ</h2>
-        <p>Some quick answers to common questions.</p>
-      </div>
-
-      <div class="cards">
-        <article class="card">
-          <h3>Do I need an account?</h3>
-          <p class="card-desc">
-            No. routit works without an account. Optional login is only used to
-            provide convenience features and stores minimal information
-            (email + UID).
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>Where are my routes stored?</h3>
-          <p class="card-desc">
-            In this beta, routes are stored locally on your device. They are not
-            uploaded to our servers.
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>Which countries are supported?</h3>
-          <p class="card-desc">
-            The app is currently focused on Ireland. Support for more regions
-            will be rolled out gradually.
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <span>© Tagora.tech — routit · Dublin / EU</span>
-      <span class="footer-separator">·</span>
-      <a href="/projects/routit/privacy-policy.html">Privacy Policy</a>
-      <span class="footer-separator">·</span>
-      <a href="/projects/routit/terms-of-use.html">Terms of Use</a>
-      <span class="footer-separator">·</span>
-      <a href="/">Back to Tagora.tech</a>
-    </footer>
+<section class="container">
+  <div class="screenshots">
+    <div>Screenshot 1</div>
+    <div>Screenshot 2</div>
+    <div>Screenshot 3</div>
+    <div>Screenshot 4</div>
   </div>
+</section>
+
+<footer>
+  © Routit · A Tagora project
+</footer>
+
 </body>
 </html>
