@@ -2,7 +2,7 @@
   --radius: 16px;
   --shadow: 0 16px 40px rgba(0,0,0,0.12);
   --container: 1120px;
-  --border-light: rgba(0,0,0,0.08);
+  --border-light: rgba(255,255,255,0.12);
 }
 
 * {
@@ -37,9 +37,7 @@ a {
   position: sticky;
   top: 0;
   z-index: 20;
-  backdrop-filter: blur(10px);
-  background: rgba(255,255,255,0.7);
-  border-bottom: 1px solid var(--border-light);
+  backdrop-filter: blur(12px);
 }
 
 .nav {
@@ -52,22 +50,24 @@ a {
 .brand {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   font-weight: 800;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
 }
 
-.badge {
-  font-size: 12px;
-  padding: 4px 10px;
-  border-radius: 999px;
+.navlinks {
+  display: flex;
+  gap: 18px;
+}
+
+.navlinks a {
   font-weight: 600;
 }
 
 /* ---------- Layout ---------- */
 
 .hero {
-  padding: 90px 0 60px;
+  padding: 100px 0 70px;
 }
 
 .hero h1 {
@@ -89,7 +89,7 @@ a {
 
 .grid {
   display: grid;
-  gap: 20px;
+  gap: 22px;
 }
 
 .cards {
@@ -100,13 +100,6 @@ a {
   border-radius: var(--radius);
   padding: 22px;
   box-shadow: var(--shadow);
-}
-
-.footer {
-  padding: 40px 0;
-  font-size: 14px;
-  opacity: 0.7;
-  border-top: 1px solid var(--border-light);
 }
 
 /* ---------- Buttons ---------- */
@@ -125,42 +118,17 @@ a {
   color: white;
 }
 
-/* ---------- Prose (legal pages) ---------- */
+/* ---------- Footer ---------- */
 
-.prose {
-  max-width: 820px;
-}
-
-.prose h1 {
-  font-size: 40px;
-  margin-top: 0;
-}
-
-.prose h2 {
-  margin-top: 32px;
-}
-
-.prose h3 {
-  margin-top: 20px;
-}
-
-.prose p,
-.prose li {
-  opacity: 0.9;
-}
-
-.updated {
+.footer {
+  padding: 40px 0;
   font-size: 14px;
-  opacity: 0.7;
-  margin-bottom: 24px;
+  border-top: 1px solid var(--border-light);
+  opacity: 0.75;
 }
 
-.hr {
-  height: 1px;
-  background: rgba(0,0,0,0.1);
-  margin: 28px 0;
-}
-/* Project logos */
+/* ---------- Project logos ---------- */
+
 .project-header {
   display: flex;
   align-items: center;
@@ -169,14 +137,14 @@ a {
 }
 
 .project-logo {
-  width: 42px;
-  height: 42px;
-  border-radius: 10px;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
   background: rgba(255,255,255,0.08);
-  border: 1px solid rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.14);
 }
 
 .project-logo img {
