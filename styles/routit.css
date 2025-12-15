@@ -1,0 +1,34 @@
+body {
+  background: #020617;
+  color: #ffffff;
+}
+
+.hero {
+  text-align: center;
+  padding: 6rem 1.5rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 1.5rem auto;
+  color: #c7d2fe;
+}
+
+.cta {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.8rem 1.5rem;
+  background: #6366f1;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.screenshots {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
