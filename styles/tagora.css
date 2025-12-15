@@ -1,42 +1,48 @@
-body {
-  background: #ffffff;
-  color: #0a0a0a;
+:root{
+  --bg: #ffffff;
+  --panel: #ffffff;
+  --text: #0a0a0a;
+  --muted: #475569;
+  --primary: #0F2F2A;
+  --accent: #2F7F6F;
+  --border: rgba(15, 23, 42, 0.10);
 }
 
-header {
-  border-bottom: 1px solid #e5e7eb;
+body{
+  background:
+    radial-gradient(1200px 600px at 15% 5%, rgba(47, 127, 111, 0.12), transparent 60%),
+    radial-gradient(900px 500px at 85% 0%, rgba(15, 47, 42, 0.10), transparent 55%),
+    #ffffff;
 }
 
-.logo {
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  color: #0f2f2a;
+.brand .mark{
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: var(--accent);
+  box-shadow: 0 0 0 6px color-mix(in srgb, var(--accent) 18%, transparent);
 }
 
-.hero {
-  text-align: center;
-  padding: 6rem 1.5rem;
+.kicker{
+  display:flex;
+  gap:10px;
+  align-items:center;
+  margin-top: 18px;
 }
 
-.hero h1 {
-  font-size: 3rem;
+.kicker span{
+  font-weight: 800;
+  color: var(--primary);
+  background: color-mix(in srgb, var(--primary) 8%, transparent);
+  border: 1px solid color-mix(in srgb, var(--primary) 16%, transparent);
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
 }
 
-.hero p {
-  max-width: 600px;
-  margin: 1.5rem auto;
-  font-size: 1.1rem;
-  color: #374151;
-}
-
-.projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2rem;
-}
-
-.project-card {
-  border: 1px solid #e5e7eb;
-  padding: 2rem;
-  border-radius: 12px;
+.hero-actions{
+  margin-top: 22px;
+  display:flex;
+  gap: 12px;
+  flex-wrap: wrap;
 }
