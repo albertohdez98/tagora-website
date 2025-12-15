@@ -1,0 +1,14 @@
+body {
+  background: #020617;
+  color: #ffffff;
+}
+
+.hero {
+  text-align: center;
+  padding: 6rem 1.5rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #0ea5a4;
+}
