@@ -1,71 +1,31 @@
 :root{
   --bg: #020617;
-  --panel: rgba(255,255,255,0.06);
-  --panel2: rgba(255,255,255,0.08);
   --text: #ffffff;
   --muted: rgba(255,255,255,0.74);
+  --border: rgba(255,255,255,0.10);
+
   --primary: #6366F1;
-  --accent: #A5B4FC;
-  --border: rgba(255,255,255,0.12);
-  --shadow: 0 18px 40px rgba(0,0,0,0.35);
+  --primary-text: #ffffff;
+
+  --topbar-bg: rgba(2,6,23,0.58);
+  --topbar-border: rgba(255,255,255,0.10);
+  --link: rgba(255,255,255,0.82);
+  --link-hover: #ffffff;
 }
 
 body{
   background:
     radial-gradient(1100px 700px at 20% 0%, rgba(99,102,241,0.22), transparent 60%),
     radial-gradient(900px 600px at 85% 10%, rgba(165,180,252,0.14), transparent 60%),
-    linear-gradient(180deg, #020617 0%, #02061a 50%, #020617 100%);
-  color: var(--text);
-}
-
-/* Topbar: dark glass (no gris feo) */
-.topbar{
-  background: rgba(2,6,23,0.55);
-  border-bottom: 1px solid rgba(255,255,255,0.10);
-  backdrop-filter: blur(12px);
-}
-
-/* Links dentro de topbar */
-.topbar a{
-  color: rgba(255,255,255,0.85);
-}
-.topbar a:hover{
-  color: rgba(255,255,255,1);
+    linear-gradient(180deg, #020617 0%, #030827 45%, #020617 100%);
 }
 
 .badge{
   background: rgba(99,102,241,0.16);
-  color: rgba(255,255,255,0.92);
   border: 1px solid rgba(99,102,241,0.28);
-}
-
-.hero p{
-  color: var(--muted);
-}
-
-/* Cards */
-.card{
-  background: var(--panel);
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow);
-}
-
-/* Buttons */
-.btn{
-  background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.14);
   color: rgba(255,255,255,0.92);
 }
-.btn:hover{ background: rgba(255,255,255,0.08); }
 
-.btn.primary{
-  background: var(--primary);
-  border: 1px solid rgba(99,102,241,0.55);
-  color: white;
-}
-.btn.primary:hover{ opacity: 0.95; }
-
-/* Note box */
 .note{
   margin-top: 22px;
   padding: 14px 16px;
@@ -74,31 +34,3 @@ body{
   background: rgba(255,255,255,0.06);
   color: var(--muted);
 }
-
-/* Screenshots */
-.screenshots{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 22px;
-  margin-top: 18px;
-}
-
-.shot{
-  border-radius: 16px;
-  overflow: hidden;
-  border: 1px solid rgba(255,255,255,0.12);
-  background: rgba(255,255,255,0.04);
-  box-shadow: 0 18px 40px rgba(0,0,0,0.25);
-}
-
-.shot img{
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* Legal prose tweak for dark */
-.prose p, .prose li{ opacity: 0.92; }
-.hr{ background: rgba(255,255,255,0.12); }
-.updated{ opacity: 0.75; }
-.footer{ border-top: 1px solid rgba(255,255,255,0.10); }
