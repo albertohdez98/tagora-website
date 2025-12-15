@@ -8,41 +8,15 @@
   --border: rgba(15, 23, 42, 0.10);
 }
 
-body{
-  background:
+body {
+  background: 
     radial-gradient(1200px 600px at 15% 5%, rgba(47, 127, 111, 0.12), transparent 60%),
     radial-gradient(900px 500px at 85% 0%, rgba(15, 47, 42, 0.10), transparent 55%),
-    #ffffff;
+    #ffffff; /* Fondo principal blanco */
 }
 
-.brand .mark{
-  width: 10px;
-  height: 10px;
-  border-radius: 999px;
-  background: var(--accent);
-  box-shadow: 0 0 0 6px color-mix(in srgb, var(--accent) 18%, transparent);
-}
-
-.kicker{
-  display:flex;
-  gap:10px;
-  align-items:center;
-  margin-top: 18px;
-}
-
-.kicker span{
-  font-weight: 800;
-  color: var(--primary);
-  background: color-mix(in srgb, var(--primary) 8%, transparent);
-  border: 1px solid color-mix(in srgb, var(--primary) 16%, transparent);
-  padding: 6px 10px;
-  border-radius: 999px;
-  font-size: 12px;
-}
-
-.hero-actions{
-  margin-top: 22px;
-  display:flex;
-  gap: 12px;
-  flex-wrap: wrap;
+.hero {
+  background: #0F2F2A; /* Fondo verde azulado para resaltar */
+  padding: 6rem 1.5rem;
+  color: white;
 }
