@@ -1,26 +1,94 @@
-body {
+:root{
+  --bg-main: #071916;          /* verde azulado muy oscuro */
+  --bg-soft: #0b2420;          /* capa secundaria */
+  --panel: rgba(255,255,255,0.05);
+  --text: #e6f0ee;
+  --muted: rgba(230,240,238,0.68);
+  --accent: #2F7F6F;
+  --border: rgba(255,255,255,0.10);
+  --shadow: 0 18px 40px rgba(0,0,0,0.45);
+}
+
+body{
   background:
-    radial-gradient(1200px 600px at 15% 0%, rgba(47,127,111,0.18), transparent 60%),
-    radial-gradient(900px 500px at 85% 10%, rgba(15,47,42,0.14), transparent 60%),
-    #ffffff;
-  color: #0a0a0a;
+    radial-gradient(1200px 700px at 20% 0%, rgba(47,127,111,0.18), transparent 60%),
+    radial-gradient(900px 600px at 85% 10%, rgba(15,47,42,0.20), transparent 60%),
+    linear-gradient(180deg, var(--bg-soft) 0%, var(--bg-main) 100%);
+  color: var(--text);
 }
 
-.badge {
-  background: rgba(47,127,111,0.15);
-  color: #0f2f2a;
-  border: 1px solid rgba(47,127,111,0.25);
+/* Topbar */
+.topbar{
+  background: rgba(7,25,22,0.6);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(12px);
 }
 
-.hero p {
-  color: #334155;
+.topbar a{
+  color: rgba(230,240,238,0.85);
+}
+.topbar a:hover{
+  color: #ffffff;
 }
 
-.card {
-  background: white;
-  border: 1px solid rgba(0,0,0,0.06);
+/* Brand */
+.brand{
+  font-weight: 800;
+  letter-spacing: 0.08em;
 }
 
-.btn.primary {
-  background: #0f2f2a;
+/* Hero */
+.hero{
+  padding: 100px 0 70px;
+}
+
+.hero h1{
+  color: #ffffff;
+}
+
+.hero p{
+  color: var(--muted);
+}
+
+/* Cards */
+.card{
+  background: var(--panel);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.card h3{
+  margin-top: 0;
+  color: #ffffff;
+}
+
+.card p{
+  color: var(--muted);
+}
+
+/* Buttons */
+.btn{
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.14);
+  color: rgba(230,240,238,0.92);
+}
+
+.btn:hover{
+  background: rgba(255,255,255,0.08);
+}
+
+.btn.primary{
+  background: var(--accent);
+  color: #041210;
+  border: 1px solid rgba(47,127,111,0.55);
+}
+
+.btn.primary:hover{
+  opacity: 0.95;
+}
+
+/* Footer */
+.footer{
+  border-top: 1px solid var(--border);
+  color: rgba(230,240,238,0.65);
 }
