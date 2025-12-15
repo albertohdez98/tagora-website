@@ -1,31 +1,65 @@
 :root{
-  --bg: #020617;
-  --panel: rgba(255,255,255,0.06);
-  --text: #ffffff;
-  --muted: rgba(255,255,255,0.72);
+  --bg: #0b1220;
+  --text: #e6f0ff;
+  --muted: rgba(230,240,255,0.72);
   --primary: #0EA5A4;
-  --accent: rgba(14,165,164,0.35);
+  --panel: rgba(255,255,255,0.06);
   --border: rgba(255,255,255,0.10);
   --shadow: 0 18px 40px rgba(0,0,0,0.35);
 }
 
 body{
   background:
-    radial-gradient(900px 500px at 20% 0%, rgba(14,165,164,0.20), transparent 60%),
-    radial-gradient(900px 500px at 80% 10%, rgba(14,165,164,0.12), transparent 60%),
-    #020617;
+    radial-gradient(900px 520px at 20% 0%, rgba(14,165,164,0.20), transparent 60%),
+    radial-gradient(900px 520px at 80% 10%, rgba(14,165,164,0.12), transparent 60%),
+    linear-gradient(180deg, #0b1220 0%, #050a14 100%);
+  color: var(--text);
 }
+
+/* Topbar dark, con toque teal */
+.topbar{
+  background: rgba(6, 10, 20, 0.55);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  backdrop-filter: blur(12px);
+}
+
+.topbar a{
+  color: rgba(230,240,255,0.85);
+}
+.topbar a:hover{
+  color: rgba(230,240,255,1);
+}
+
 .badge{
-  color: rgba(255,255,255,0.9);
-  background: rgba(14,165,164,0.12);
-  border-color: rgba(14,165,164,0.18);
+  background: rgba(14,165,164,0.14);
+  color: rgba(230,240,255,0.92);
+  border: 1px solid rgba(14,165,164,0.24);
 }
+
+.hero p{
+  color: var(--muted);
+}
+
 .card{
-  background: rgba(255,255,255,0.06);
-  border-color: rgba(255,255,255,0.10);
+  background: var(--panel);
+  border: 1px solid var(--border);
   box-shadow: var(--shadow);
 }
+
+.btn{
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: rgba(230,240,255,0.92);
+}
+.btn:hover{ background: rgba(255,255,255,0.08); }
+
 .btn.primary{
   background: var(--primary);
-  border-color: rgba(14,165,164,0.55);
+  color: #041014;
+  border: 1px solid rgba(14,165,164,0.55);
+}
+.btn.primary:hover{ opacity: 0.95; }
+
+.footer{
+  border-top: 1px solid rgba(255,255,255,0.08);
 }
