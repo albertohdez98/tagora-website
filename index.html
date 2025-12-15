@@ -1,183 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Tagora.tech – Indie tools & experiments</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta
-    name="description"
-    content="Tagora.tech hosts indie, experimental products — starting with routit, a running/walking route generator."
-  />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet"
-  />
+  <meta charset="UTF-8">
+  <title>Tagora</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/tagora.css">
 </head>
-
 <body>
-  <div class="page">
-    <!-- Navigation -->
-    <header class="nav">
-      <div class="nav-left">
-        <div class="logo-mark">T</div>
-        <div class="logo-text">
-          <span class="logo-main">Tagora.tech</span>
-          <span class="logo-sub">Indie tools & experiments</span>
-        </div>
-      </div>
-      <nav class="nav-links">
-        <a href="#projects">Projects</a>
-        <a href="#support">Support</a>
-        <a href="#about">About</a>
-      </nav>
-    </header>
 
-    <!-- Hero -->
-    <main class="hero">
-      <section class="hero-text">
-        <h1>
-          Indie tools for
-          <span class="accent-gradient">curious people</span>.
-        </h1>
-        <p class="hero-subtitle">
-          Tagora.tech is a small lab of experimental apps — starting with
-          <strong>routit</strong>, a smart route generator for running and walking.
-        </p>
-        <div class="hero-actions">
-          <a href="#projects" class="btn primary">View routit</a>
-          <a href="#support" class="btn ghost">Support Tagora</a>
-        </div>
-        <div class="hero-meta">
-          <span>🔧 Solo-built indie project</span>
-          <span>📍 Dublin / EU</span>
-        </div>
-      </section>
+<header>
+  <div class="logo">TAGORA</div>
+  <nav>
+    <a href="/projects/routit/">Routit</a>
+    <a href="/projects/plastik/">Plastik</a>
+  </nav>
+</header>
 
-      <section class="hero-card">
-        <div class="hero-card-inner">
-          <h2>Currently live</h2>
-          <p>
-            <strong>routit</strong> — an experimental route generator for runners
-            and walkers. Tagora.tech hosts its support and legal documentation.
-          </p>
-          <a href="/projects/routit/" class="chip-link">Go to routit hub ↓</a>
-        </div>
-      </section>
-    </main>
+<section class="hero">
+  <h1>Building focused digital products</h1>
+  <p>
+    Tagora is an independent product studio creating simple, functional
+    applications with a strong focus on clarity and usability.
+  </p>
+</section>
 
-    <!-- Projects -->
-    <section id="projects" class="section">
-      <div class="section-header">
-        <h2>Projects</h2>
-        <p>Tagora.tech currently focuses on one product: routit.</p>
-      </div>
-
-      <div class="cards">
-        <article class="card">
-          <div class="card-tag">Live</div>
-          <h3>routit</h3>
-          <p class="card-desc">
-            A route generator for runners and walkers. Create distance-based loops
-            from your starting point — no more repetitive out-and-back routes.
-          </p>
-          <ul class="card-list">
-            <li>🏃 Designed for running & walking</li>
-            <li>📍 Currently Ireland-focused (beta)</li>
-            <li>⚖️ Legal hub hosted on Tagora.tech</li>
-          </ul>
-
-          <div class="card-actions">
-            <a href="/projects/routit/" class="btn small primary">
-              Open routit hub
-            </a>
-          </div>
-
-          <div class="legal-links">
-            <a href="/projects/routit/privacy-policy.html">Privacy Policy</a>
-            <span>·</span>
-            <a href="/projects/routit/terms-of-use.html">Terms of Use</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- Support -->
-    <section id="support" class="section section-muted">
-      <div class="section-header">
-        <h2>Support Tagora</h2>
-        <p>
-          Tagora.tech is a solo indie initiative built in spare time.
-          If routit helps you and you'd like to support the work,
-          you can do so here.
-        </p>
-      </div>
-
-      <div class="cards">
-        <article class="card">
-          <h3>Support development</h3>
-          <p class="card-desc">
-            Donations help cover infrastructure, developer accounts, and time needed
-            to maintain and improve routit.
-          </p>
-          <div class="card-actions">
-            <!-- Replace YOUR_STRIPE_LINK_HERE with your Stripe payment URL -->
-            <a
-              href="YOUR_STRIPE_LINK_HERE"
-              class="btn small primary"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Support via Stripe
-            </a>
-          </div>
-          <span class="card-note">Thank you — it genuinely helps.</span>
-        </article>
-      </div>
-    </section>
-
-    <!-- About -->
-    <section id="about" class="section">
-      <div class="section-header">
-        <h2>About Tagora</h2>
-        <p>
-          Tagora.tech is a personal lab for experimentation — a space to build,
-          break, and iterate without pressure.
-        </p>
-      </div>
-
-      <div class="about-grid">
-        <div>
-          <h3>Principles</h3>
-          <ul class="about-list">
-            <li><strong>Small, focused tools.</strong></li>
-            <li><strong>Real-world inspiration.</strong></li>
-            <li><strong>Sustainable pace.</strong> Solo-built, free-time driven.</li>
-          </ul>
-        </div>
-
-        <div>
-          <h3>Contact</h3>
-          <p>Feedback or suggestions for routit are always welcome.</p>
-          <p class="contact-email">
-            <a href="mailto:contact@tagora.tech">contact@tagora.tech</a>
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <span>© Tagora.tech — Indie projects · Dublin / EU</span>
-      <span class="footer-separator">·</span>
-      <span>Built with GitHub Pages</span>
-      <span class="footer-separator">·</span>
-      <a href="/projects/routit/privacy-policy.html">Privacy Policy</a>
-      <span class="footer-separator">·</span>
-      <a href="/projects/routit/terms-of-use.html">Terms of Use</a>
-    </footer>
+<section class="container">
+  <h2>Projects</h2>
+  <div class="projects">
+    <div class="project-card">
+      <h3>Routit</h3>
+      <p>Smart route generation for walking, running and cycling.</p>
+      <a href="/projects/routit/">View project →</a>
+    </div>
+    <div class="project-card">
+      <h3>Plastik</h3>
+      <p>Cognitive training through short, focused exercises.</p>
+      <a href="/projects/plastik/">View project →</a>
+    </div>
   </div>
+</section>
+
+<footer>
+  © Tagora
+</footer>
+
 </body>
 </html>
