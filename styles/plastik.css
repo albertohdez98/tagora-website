@@ -21,8 +21,8 @@ body{
 }
 
 .topbar{
-  background: linear-gradient(180deg, rgba(0,56,73,0.14), rgba(0,56,73,0.08));
-  border-bottom: 1px solid rgba(0,56,73,0.12);
+  background: #003849;
+  border-bottom: 1px solid #002e39;
   backdrop-filter: blur(12px);
 }
 .topbar a{
@@ -137,9 +137,9 @@ body{
 .muted{ color: var(--muted); margin:0; }
 .actions{ display:flex; gap:10px; flex-wrap: wrap; }
 .btn.ghost{
-  background: transparent;
+  background: #003849;
   border: 1px solid #003849;
-  color: #003849;
+  color: #ffffff;
 }
 .bullets{
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
