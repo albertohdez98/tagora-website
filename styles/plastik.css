@@ -1,50 +1,41 @@
 :root{
-  --bg: #060b16;
-  --text: #e8f4ff;
-  --muted: rgba(232,244,255,0.76);
-  --primary: #0EA5A4;
-  --primary-strong: #0fb7b5;
-  --panel: rgba(255,255,255,0.06);
-  --panel-strong: rgba(14,165,164,0.14);
-  --border: rgba(255,255,255,0.12);
-  --shadow: 0 18px 50px rgba(0,0,0,0.45);
+  --bg: #F3F1EB;
+  --text: #003849;
+  --muted: #6B6F73;
+  --subtle: #9ca3af;
+  --primary: #003849;
+  --primary-strong: #002e39;
+  --panel: #FFFFFF;
+  --panel-strong: #FAF9F5;
+  --border: #d6d9dc;
+  --shadow: 0 14px 30px rgba(0,0,0,0.12);
 }
 
 body{
   font-family: 'Space Grotesk', 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
   background:
-    radial-gradient(900px 520px at 20% 0%, rgba(14,165,164,0.20), transparent 60%),
-    radial-gradient(900px 520px at 80% 10%, rgba(14,165,164,0.12), transparent 60%),
-    linear-gradient(180deg, #060b16 0%, #04070f 100%);
+    radial-gradient(640px 420px at 16% 0%, rgba(0,56,73,0.08), transparent 62%),
+    radial-gradient(640px 420px at 84% 0%, rgba(0,56,73,0.06), transparent 62%),
+    linear-gradient(180deg, #F7F5EF 0%, #F1EEE7 100%);
   color: var(--text);
 }
 
 .topbar{
-  background: rgba(4, 8, 16, 0.7);
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-  backdrop-filter: blur(14px);
+  background: rgba(255,255,255,0.75);
+  border-bottom: 1px solid #e5e7eb;
+  backdrop-filter: blur(12px);
 }
 .topbar a{
-  color: rgba(232,244,255,0.88);
+  color: #003849;
 }
-.topbar a:hover{ color: #ffffff; }
+.topbar a:hover{ color: #001e28; }
 
-.brand{ letter-spacing: 0.14em; }
+.brand{ letter-spacing: 0.14em; color: #003849; }
 .brand-mark{ width: 36px; height: auto; }
 
 .hero{
   padding: 96px 0 50px;
   position: relative;
-}
-.hero:after{
-  content:"";
-  position:absolute;
-  inset:-30px -60px auto;
-  height: 320px;
-  background: radial-gradient(600px 420px at 25% 0%, rgba(14,165,164,0.2), transparent 70%);
-  filter: blur(18px);
-  opacity: 0.7;
-  pointer-events: none;
 }
 .hero h1{ max-width: 780px; }
 .hero p{
@@ -56,32 +47,17 @@ body{
   font-size: 14px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: color-mix(in srgb, var(--text) 70%, transparent);
+  color: #6B6F73;
   margin-bottom: 10px;
-}
-.chips{
-  display:flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  margin-top: 18px;
-}
-.chip{
-  display:inline-flex;
-  padding: 8px 12px;
-  border-radius: 999px;
-  background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.12);
-  font-weight: 600;
-  color: rgba(232,244,255,0.9);
 }
 
 .badge{
   display:inline-flex;
   padding: 8px 12px;
   border-radius: 999px;
-  background: rgba(14,165,164,0.14);
-  color: rgba(232,244,255,0.94);
-  border: 1px solid rgba(14,165,164,0.26);
+  background: #E8F0F3;
+  color: #003849;
+  border: 1px solid #cdd8dc;
   font-weight: 650;
   letter-spacing: 0.01em;
   margin-bottom: 14px;
@@ -93,6 +69,7 @@ body{
   border: 1px solid var(--border);
   box-shadow: var(--shadow);
   padding: 22px;
+  border-radius: 18px;
 }
 .highlight h3{ margin: 6px 0 10px; }
 .highlight p{ color: var(--muted); margin:0; }
@@ -105,7 +82,7 @@ body{
 }
 .product-copy h2{ margin:0 0 12px; }
 .product-copy p{ color: var(--muted); margin: 0 0 16px; }
-.list{ padding-left: 18px; color: rgba(232,244,255,0.86); }
+.list{ padding-left: 18px; color: #003849; }
 .list li{ margin-bottom: 8px; }
 
 .product-media{
@@ -115,9 +92,9 @@ body{
 .shot{
   border-radius: 18px;
   overflow:hidden;
-  border: 1px solid rgba(255,255,255,0.12);
-  background: rgba(255,255,255,0.04);
-  box-shadow: 0 18px 40px rgba(0,0,0,0.28);
+  border: 1px solid #e5e7eb;
+  background: #FFFFFF;
+  box-shadow: 0 16px 30px rgba(0,0,0,0.08);
 }
 .placeholder{
   position:relative;
@@ -126,8 +103,8 @@ body{
   justify-content:center;
   min-height: 260px;
   background:
-    linear-gradient(135deg, rgba(14,165,164,0.24), rgba(14,165,164,0.05));
-  color: rgba(232,244,255,0.82);
+    linear-gradient(135deg, #FDFCF9, #EEF3F5);
+  color: #003849;
   font-weight: 700;
   letter-spacing: 0.01em;
 }
@@ -135,19 +112,19 @@ body{
   content:"";
   position:absolute;
   inset:12px;
-  border: 1px dashed rgba(255,255,255,0.35);
+  border: 1px dashed #cbd5dc;
   border-radius: 14px;
 }
 .placeholder span{ position:relative; z-index:1; }
 .placeholder.secondary{
   min-height: 200px;
-  background: linear-gradient(135deg, rgba(14,165,164,0.18), rgba(255,255,255,0.04));
+  background: linear-gradient(135deg, #F8FAFB, #F1F5F7);
 }
 
 .checklist .card{
-  background: rgba(255,255,255,0.03);
-  border: 1px solid rgba(255,255,255,0.14);
-  box-shadow: 0 24px 60px rgba(0,0,0,0.4);
+  background: var(--panel);
+  border: 1px solid #dfe3e6;
+  box-shadow: 0 16px 34px rgba(0,0,0,0.12);
 }
 .checklist .row{
   display:flex;
@@ -156,13 +133,13 @@ body{
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.in-card{ margin: 0 0 6px; color: rgba(232,244,255,0.7); }
+.in-card{ margin: 0 0 6px; color: #6B6F73; }
 .muted{ color: var(--muted); margin:0; }
 .actions{ display:flex; gap:10px; flex-wrap: wrap; }
 .btn.ghost{
-  background: rgba(255,255,255,0.02);
-  border: 1px solid rgba(255,255,255,0.16);
-  color: rgba(232,244,255,0.88);
+  background: transparent;
+  border: 1px solid #003849;
+  color: #003849;
 }
 .bullets{
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -172,33 +149,47 @@ body{
 .tick{
   position:relative;
   padding-left: 26px;
-  color: rgba(232,244,255,0.86);
+  color: #003849;
 }
 .tick:before{
   content:"*";
   position:absolute;
   left:0;
   top:0;
-  color: var(--primary-strong);
+  color: var(--primary);
   font-weight: 800;
 }
 
 .legal{ padding-top: 24px; }
 .legal-card{
-  background: rgba(6, 10, 20, 0.72);
-  border: 1px solid rgba(255,255,255,0.12);
+  background: var(--panel);
+  border: 1px solid #dfe3e6;
   box-shadow: var(--shadow);
 }
 .legal-card h1{
   font-size: 34px;
 }
 .legal-card p, .legal-card li{
-  color: rgba(232,244,255,0.86);
+  color: #003849;
 }
-.legal-card strong{ color: #ffffff; }
-.legal-card a{ color: #7ee3e1; }
-.legal-card a:hover{ color: #9af1f0; }
+.legal-card strong{ color: #001e28; }
+.legal-card a{ color: #0a5164; }
+.legal-card a:hover{ color: #003849; }
+
+.btn{
+  background: #003849;
+  color: #ffffff;
+  border: 1px solid #003849;
+}
+.btn:hover{ background: #002e39; border-color: #002e39; }
+.btn.primary{
+  background: #003849;
+  border-color: #003849;
+  color: #ffffff;
+}
+.btn.primary:hover{ background: #002e39; border-color: #002e39; }
 
 .footer{
-  border-top: 1px solid rgba(255,255,255,0.08);
+  border-top: 1px solid #e5e7eb;
+  color: #6B6F73;
 }
