@@ -181,12 +181,14 @@ body{
   color: #ffffff;
   border: 1px solid #003849;
 }
+.btn:visited{ color: #ffffff; }
 .btn:hover{ background: #002e39; border-color: #002e39; }
 .btn.primary{
   background: #003849;
   border-color: #003849;
   color: #ffffff;
 }
+.btn.primary:visited{ color: #ffffff; }
 .btn.primary:hover{ background: #002e39; border-color: #002e39; }
 
 .footer{
