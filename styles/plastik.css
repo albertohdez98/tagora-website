@@ -120,6 +120,22 @@ body{
   min-height: 200px;
   background: linear-gradient(135deg, #F8FAFB, #F1F5F7);
 }
+.product-media.long-shots{
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+.shot.tall img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.caption{
+  padding: 10px 12px 14px;
+  color: #6B6F73;
+  font-size: 14px;
+  background: #F8FAFB;
+  border-top: 1px solid #e5e7eb;
+}
 
 .checklist .card{
   background: var(--panel);
