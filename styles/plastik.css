@@ -114,17 +114,6 @@ body{
   height: auto;
   display: block;
 }
-.caption{
-  padding: 12px 14px 14px;
-  color: #003849;
-  font-size: 14px;
-  background: #F8FAFB;
-  border-top: 1px solid #e5e7eb;
-}
-.section-subtle{
-  margin: 6px 0 18px;
-  color: #6B6F73;
-}
 
 .checklist .card{
   background: var(--panel);
